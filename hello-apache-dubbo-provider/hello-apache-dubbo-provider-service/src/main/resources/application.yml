@@ -8,9 +8,13 @@ dubbo:
     base-packages: cn.lcdiao.apache.dubbo.provider.service
   protocol:
     name: dubbo
-    #-1:自动分配端口
-    port: -1
+    #设置为-1:自动分配端口
+    port: 20881
     # 序列化方式
     serialization: kryo
   registry:
     address: nacos://134.175.116.100:8848
+  #配置负载均衡
+  provider:
+    #默认random，可配置的值分别是：random（随机），roundrobin（轮询），leastactive（最少活跃调用数），consistenthash（一致性Hash）
+    loadbalance: roundrobin
