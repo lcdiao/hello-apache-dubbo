@@ -13,7 +13,8 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-        <!--<module>hello-apache-dubbo-dependencies</module>-->
+        <module>hello-apache-dubbo-dependencies</module>
+        <module>hello-apache-dubbo-provider</module>
     </modules>
     <properties>
         <java.version>1.8</java.version>
@@ -30,15 +31,15 @@
     </licenses>
     <developers>
         <developer>
-            <id>liwemin</id>
-            <name>Lusifer Lee</name>
-            <email>lee.lusifer@gmail.com</email>
+            <id>diao</id>
+            <name>lcdiao</name>
+            <email>120879566@qq.com</email>
         </developer>
     </developers>
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.funtl</groupId>
+                <groupId>cn.lcdiao</groupId>
                 <artifactId>hello-apache-dubbo-dependencies</artifactId>
                 <version>${project.version}</version>
                 <type>pom</type>
