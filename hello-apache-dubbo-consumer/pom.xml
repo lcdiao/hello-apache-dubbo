@@ -72,6 +72,12 @@
             <version>${project.parent.version}</version>
         </dependency>
         <!-- Projects End -->
+
+        <!-- 序列化 -->
+        <dependency>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo-serialization-kryo</artifactId>
+        </dependency>
     </dependencies>
     <build>
         <plugins>

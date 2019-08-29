@@ -10,5 +10,7 @@ dubbo:
     name: dubbo
     #-1:自动分配端口
     port: -1
+    # 序列化方式
+    serialization: kryo
   registry:
     address: nacos://134.175.116.100:8848

@@ -9,6 +9,8 @@ dubbo:
   protocol:
     name: dubbo
     port: -1
+    # 序列化方式
+    serialization: kryo
   registry:
     address: nacos://134.175.116.100:8848
 server:
